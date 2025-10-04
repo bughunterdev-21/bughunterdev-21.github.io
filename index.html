@@ -1,111 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chaya Bhavana Kalyani | QA Automation Engineer</title>
   <style>
     body {
-      font-family: "Segoe UI", Arial, sans-serif;
+      font-family: 'Segoe UI', Arial, sans-serif;
       margin: 0;
-      background-color: #f9f9f9;
+      padding: 0;
+      background-color: #f4f8fc;
       color: #333;
+      line-height: 1.6;
+      scroll-behavior: smooth;
     }
-    header {
+
+    /* NAVIGATION */
+    nav {
       background-color: #007acc;
-      color: white;
-      padding: 40px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
       text-align: center;
+      padding: 15px 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-size: 1.1em;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* HEADER / HOME SECTION */
+    header {
+      text-align: center;
+      padding: 100px 20px;
+      background: linear-gradient(135deg, #007acc, #005f99);
+      color: white;
     }
     header h1 {
-      margin: 0;
-      font-size: 2.2em;
+      font-size: 2.8em;
+      margin-bottom: 10px;
     }
     header p {
-      margin-top: 8px;
-      font-size: 1.1em;
+      font-size: 1.3em;
     }
+
+    /* SECTION STYLES */
     section {
       max-width: 900px;
-      margin: 40px auto;
-      padding: 0 20px;
+      margin: 60px auto;
+      background-color: white;
+      padding: 40px 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
     }
-    h2 {
+    section h2 {
       color: #007acc;
       border-bottom: 2px solid #007acc;
-      padding-bottom: 5px;
+      padding-bottom: 6px;
+      margin-bottom: 20px;
     }
+
     ul {
-      line-height: 1.8;
+      list-style: square;
+      padding-left: 25px;
     }
-    .contact a {
-      color: #007acc;
+
+    .button {
+      display: inline-block;
+      background-color: #007acc;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 6px;
       text-decoration: none;
+      font-weight: bold;
     }
+    .button:hover {
+      background-color: #005f99;
+    }
+
     footer {
       text-align: center;
       background-color: #007acc;
       color: white;
-      padding: 15px;
+      padding: 20px;
       margin-top: 40px;
     }
   </style>
 </head>
 <body>
-  <header>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <a href="#home">HOME</a>
+    <a href="#portfolio">PORTFOLIO</a>
+    <a href="#projects">PROJECTS</a>
+    <a href="#about">ABOUT</a>
+  </nav>
+
+  <!-- HOME SECTION -->
+  <header id="home">
     <h1>Chaya Bhavana Kalyani</h1>
     <p>Software Test Analyst | Automation & Manual Testing</p>
   </header>
 
-  <section id="about">
-    <h2>About Me</h2>
+  <!-- PORTFOLIO SECTION -->
+  <section id="portfolio">
+    <h2>Portfolio</h2>
     <p>
-      I am a <strong>Software Test Analyst</strong> with <strong>3.6 years of experience</strong> 
-      in Manual and Automation Testing across Healthcare, Banking, and Telecom domains. 
-      Skilled in building robust automation frameworks using Selenium WebDriver, Java, 
-      TestNG, and Cucumber (BDD). Passionate about ensuring quality, improving coverage, 
-      and leveraging AI tools for efficient automation.
+      I am a passionate <strong>Software Test Analyst</strong> with <strong>3.6 years of experience</strong>
+      in both Manual and Automation Testing across Healthcare, Banking, and Telecom domains.  
+      I specialize in designing and maintaining automation frameworks using
+      <strong>Selenium WebDriver, Java, TestNG, and Cucumber (BDD)</strong>.  
+      I also have experience in API testing with <strong>Postman</strong> and version control with <strong>GitHub</strong>.
+    </p>
+    <p>
+      My focus is on building efficient, maintainable test frameworks and leveraging
+      <strong>AI tools</strong> to accelerate testing and improve coverage.
     </p>
   </section>
 
-  <section id="skills">
-    <h2>Technical Skills</h2>
-    <ul>
-      <li><strong>Automation Tools:</strong> Selenium WebDriver, TestNG, Cucumber (BDD)</li>
-      <li><strong>Languages:</strong> Java, Python</li>
-      <li><strong>Defect Tracking:</strong> JIRA, HP ALM</li>
-      <li><strong>Version Control:</strong> Git, GitHub</li>
-      <li><strong>API Testing:</strong> Postman</li>
-      <li><strong>Methodologies:</strong> Agile Scrum, Waterfall</li>
-      <li><strong>OS:</strong> Windows, Linux</li>
-    </ul>
-  </section>
-
+  <!-- PROJECTS SECTION -->
   <section id="projects">
     <h2>Projects</h2>
     <ul>
-      <li><strong>Medicover Hospitals Website Testing</strong> – Automated core web flows using Selenium & Java,Python ; performed cross-browser and performance validation.</li>
-      <li><strong>GBF Flex Cube (Wells Fargo)</strong> – Designed functional & regression test cases; managed defects in JIRA.</li>
-      <li><strong>Optus Services</strong> – Conducted GUI, functional, and regression testing for telecom service modules.</li>
+      <li>
+        <strong>Medicover Hospitals Website Testing</strong> – Automated workflows (appointment booking, doctor search) using Selenium & Java. Conducted cross-browser testing and performance validation.
+      </li>
+      <li>
+        <strong>GBF Flex Cube (Wells Fargo)</strong> – Developed and executed test cases for functional and regression testing; logged defects in JIRA.
+      </li>
+      <li>
+        <strong>Optus Services</strong> – Conducted GUI and functional testing for telecom systems, ensuring high test coverage and quality.
+      </li>
     </ul>
   </section>
 
-  <section id="resume">
-    <h2>Resume</h2>
+  <!-- ABOUT SECTION -->
+  <section id="about">
+    <h2>About</h2>
     <p>
-      📄 <a href="ChayaBhavanaKalyani_QA_Resume.pdf" download>Download My Resume (PDF)</a>
+      I hold a <strong>B.Tech in Electrical & Electronics Engineering</strong> from Ravindra College of Engineering for Women (JNTUA).  
+      I’m currently working at <strong>Medicover Corporate Office</strong> as a Senior QA Associate, ensuring seamless web application quality through manual and automation testing.  
     </p>
-  </section>
-
-  <section id="contact" class="contact">
-    <h2>Contact</h2>
-    <p>📧 Email: <a href="mailto:bhavanakalyani1994@gmail.com">bhavanakalyani1994@gmail.com</a></p>
-    <p>🔗 LinkedIn: <a href="https://www.linkedin.com/in/bhavana-kalyani-chaya-8b8746255" target="_blank">Bhavana Kalyani Chaya</a></p>
-    <p>💻 GitHub: <a href="https://github.com/bughunterdev-21" target="_blank">github.com/bughunterdev-21</a></p>
+    <p>
+      📧 <strong>Email:</strong> <a href="mailto:bhavanakalyani1994@gmail.com">bhavanakalyani1994@gmail.com</a><br>
+      🔗 <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/bhavana-kalyani-chaya-8b8746255" target="_blank">Bhavana Kalyani Chaya</a><br>
+      💻 <strong>GitHub:</strong> <a href="https://github.com/bughunterdev-21" target="_blank">github.com/bughunterdev-21</a>
+    </p>
+    <p>
+      <a href="ChayaBhavanaKalyani_QA_Resume.pdf" class="button" download>📄 Download My Resume</a>
+    </p>
   </section>
 
   <footer>
     © 2025 Chaya Bhavana Kalyani | QA Automation Engineer
   </footer>
+
 </body>
 </html>
